@@ -4,16 +4,18 @@ require 'json'
 data= []
 ARGF.each do |line|
   d = JSON.parse(line)
+  account = d['account'].gsub('http://instagram.userlocal.jp/users/', '').gsub('/', '')
+  
   x = {
     type: 'add',
-    id: "twitter.com/#{d['twitter_id']}",
+    id: "instagram.com/#{account}/",
     fields: {
-      sns: 'twitter',
-      account: d['twitter_id'],
+      sns: 'instagram',
+      account: account,
       name: d['name'],
-      tags: d['tags'],
+      tags: [],
       description: d['description'],
-      follower: d['follower'].to_i,
+      follower: d['follower'],
     }
   }
   data.push(x)

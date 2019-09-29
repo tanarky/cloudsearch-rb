@@ -1,0 +1,18 @@
+[
+    {
+        "type": "add",
+        "id": "twitter.com/ariyoshihiroiki",
+        "fields": {
+            "sns": "twitter",
+            "account": "ariyoshihiroiki",
+            "name": "有吉弘行",
+            "tags": [
+                "国内",
+                "お笑い",
+                "有名人・芸能人"
+            ],
+            "description": "穏やかに。。。",
+            "follower": 7146526
+        }
+    }
+]
